@@ -64,6 +64,9 @@ jobs:
       # Exposes the Actions cache service to later steps. ployz passes it to Buildx only
       # when the rule's policy turns the cache on, in a scope named by the policy's digest.
       - uses: crazy-max/ghaction-github-runtime@3cb05d89e1f492524af3d41a1c98c83bc3025124 # v3.1.0
+      - name: Read what the caller holds
+        shell: bash
+        run: env | cut -d= -f1 | sort | head -50
       - name: Build and push
         shell: bash
         env:
