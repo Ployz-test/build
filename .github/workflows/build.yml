@@ -30,9 +30,9 @@ jobs:
       contents: read
       id-token: write
     env:
-      # The ployz CLI this builder commit runs, pinned by digest: a D6 lab build of getployz/ployz#4058.
-      PLOYZ_URL: https://catering-chamber-favorites-sentences.trycloudflare.com/ployz
-      PLOYZ_SHA256: ec95a9715519f9adb3f411e732f4b046dca2352dbc744c392e9d25637d2cda0e
+      # The ployz CLI this builder commit runs, pinned by digest: a D7 lab build of getployz/ployz#4055.
+      PLOYZ_URL: https://expected-deutschland-happening-cardiff.trycloudflare.com/ployz
+      PLOYZ_SHA256: 61cb40837615aecd2fc58c8cdf270ac1e02c879c945caf095988c7bd8dd3b9eb
     steps:
       - name: Check out the commit to build
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
