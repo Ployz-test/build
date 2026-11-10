@@ -62,7 +62,9 @@ jobs:
             docker info --format '{{json .DriverStatus}}' | grep -q 'io.containerd.snapshotter.v1'
           fi
       # Exposes the Actions cache service to later steps. ployz passes it to Buildx only
-      # when the rule's policy turns the cache on, in a scope named by the policy's digest.
+      # when the rule's policy turns the cache on, in a scope named by the policy's digest
+      # and the attest key the build secrets opened with, so a run fed another key never
+      # shares an entry with an honest build.
       - uses: crazy-max/ghaction-github-runtime@3cb05d89e1f492524af3d41a1c98c83bc3025124 # v3.1.0
       - name: Build and push
         shell: bash
