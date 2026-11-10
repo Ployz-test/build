@@ -30,8 +30,8 @@ jobs:
       contents: read
       id-token: write
     env:
-      # The ployz CLI this builder commit runs, pinned by digest: a D7b lab build of getployz/ployz#4073.
-      PLOYZ_URL: https://along-answer-decision-triumph.trycloudflare.com/ployz
+      # The ployz CLI this builder commit runs, pinned by digest: the D7b lab build of getployz/ployz#4073, served for the M3 lab.
+      PLOYZ_URL: https://ronald-father-earth-unit.trycloudflare.com/ployz
       PLOYZ_SHA256: 8ac00db05751447e4c46b987f4e224ca99ab79afd37409f2b400a6a190be7f6f
     steps:
       - name: Check out the commit to build
