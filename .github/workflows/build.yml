@@ -30,9 +30,9 @@ jobs:
       contents: read
       id-token: write
     env:
-      # The ployz CLI this builder commit runs, pinned by digest: a D7b lab build of getployz/ployz#4073.
-      PLOYZ_URL: https://along-answer-decision-triumph.trycloudflare.com/ployz
-      PLOYZ_SHA256: 8ac00db05751447e4c46b987f4e224ca99ab79afd37409f2b400a6a190be7f6f
+      # The ployz CLI this builder commit runs, pinned by digest: a D6v2 lab build of the commit-approval branch.
+      PLOYZ_URL: https://bon-beads-holidays-ports.trycloudflare.com/ployz
+      PLOYZ_SHA256: 51c38975c9700fd9eeb53da544eaf9a6e2f7bb2dea46ca1ee274bf7ac9223459
     steps:
       - name: Check out the commit to build
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
